@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: 'Rubik';
+    color: rgba(245, 245, 245, 0.788);
+}
+
+body{
+    background-color: #0C0B0B;
+}
+
+.main-conteiner{
+    background-color: #0F0E0E;
+    min-height: 50vh;
+    max-height: auto;
+    width: 70vw;
+    margin: 40px auto;
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imagemEtxts{
+    min-height: 15vh;
+    min-width: 300px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    padding: 0px 5px 0 20px;
+}
+
+.imagemEtxts img{
+    max-width: 90px;
+    border-radius: 50%;
+}
+
+.txts{
+    margin: 10px;
+}
+
+.txts h2{
+    font-weight: 600;
+    position: relative;
+    top: -18px;
+}
+
+.txts p{
+    font-weight: 200;
+    position: relative;
+    top: -20px;
+}
+
+.botãoEdit{
+    min-height: 15vh;
+    min-width: 300px;
+    flex-grow: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px;
+
+}
+
+.botãoEdit i{
+    border-radius: 3px;
+    padding: 10px;
+    background-color: #1f1f1f;
+}
+
+.container-cards{
+    min-height: 20vh;
+    height: auto;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cards{
+    margin: 5px;
+    min-width: 120px;
+    flex-shrink: 1;
+    flex-basis: 28%;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+
+#green{
+    background-color: #046313;
+}
+#blue{
+    background-color: #044A7D;
+}
+#yellow{
+    background-color: #725200;
+}
+
+.cards h2{
+    font-size: 1rem;
+}
+
+.cards p{
+    font-size: 3rem;
+}
+
+
+
+@media (max-width: 1073px){
+    .main-conteiner{
+        flex-direction: column;
+    }
+
+    .imagemEtxts{
+        flex-direction: column;
+        text-align: center;
+        margin-top: 5px;
+        padding: 0px;
+    }
+
+    .txts{
+        text-align: center;
+        margin: 0px;
+    }
+
+    .botãoEdit{
+        min-height: 0vh;
+        
+        justify-content: center;
+        padding: 3px;
+    }
+
+    .txts h2{
+        position: static;
+    }
+    
+    .txts p{
+        position: static;
+    }
+    
+    .cards{
+        flex-basis: 100%;
+        margin: 30px;
+    }
+}
